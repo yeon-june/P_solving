@@ -12,7 +12,7 @@ for t in range(T):
 
     for n in range(N):
         row_list.append(list(input().split()))
-    # row_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+    # row_list = [['1', '2', '3'], ['4', '5', '6'], ['7', '8', '9']]
 
     # 90도 돌리기 시작: 모든 행렬은 row 단위로 정리
     # rowN, row N-1, ... 순서로 세로로 출력 -> [row[n][1], row[n-1][1]...] 형식으로 묶을 예정
@@ -23,7 +23,7 @@ for t in range(T):
         # N번째~ row의 j번째 요소를 한 리스트로 묶기 아래 예시! 
         for i in range(N-1,-1,-1):
             new_row_list90[j].append(row_list[i][j])
-    # new_row_list1 = [[7, 4, 1], [8, 5, 2], [9, 6, 3]]
+    # new_row_list1 = [['7', '4', '1'], ['8', '5', '2'], ['9', '6', '3']]
 
     # 90도를 90도 돌리기
     new_row_list180 = []
