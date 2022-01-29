@@ -1,4 +1,1 @@
-T = int(input())
-
-for t in range(T):
-    
+print(roundup(0.5))
