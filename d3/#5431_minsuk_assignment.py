@@ -6,5 +6,7 @@ for t in range(T):
     # 전체 학생 리스트에서 제출 학생 지우기
     for student in assignment_lst:
         students.remove(student)
-    print(f'#{t+1}', end = ' ')
-    print(*students)
+    print(f'#{t+1}', *students)
+
+
+    # print(f'#{t+1}', *students)

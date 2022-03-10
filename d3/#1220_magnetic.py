@@ -10,6 +10,7 @@ for t in range(1,11):
     for column in array_column:
         str_mags =''
         for num in column:
+            # replace('0','') 도 가능, 0 제거
             if num != 0:
                 str_mags += str(num)
         cnt += str_mags.count('12')
